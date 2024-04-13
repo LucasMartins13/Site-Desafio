@@ -1,0 +1,977 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.cfg-1{
+    min-width: 768px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+}
+.header-1{
+    display: flex;
+    justify-content: space-around;
+    background: #242424; 
+}
+.fale-conosco{
+    display: flex;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    justify-content: center;
+}
+.fale-conosco p::selection{
+    background: #000000;
+}
+.fale-conosco p{
+    top: 16px;
+    padding-left: 10px;
+    font-size: 12px;
+    position: relative;
+    margin: 0 auto;
+    max-height: 24px;
+    max-width: 200px;
+}
+.fale-conosco img{
+    cursor: pointer;
+    top: 16px;
+    margin: 0 auto;
+    max-height: 24px;
+    max-width: 24px;
+    background-color: rgb(73, 73, 78);
+    position: relative;
+    padding: 4px;
+    border-radius: 37%;
+}
+.fale-conosco img::selection{
+    background: #000000;
+}
+.fale-conosco img:hover{
+    background: #383838;
+    transition: 2s;
+}
+.atendimento{
+    display: flex;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin: 0;
+    background-color: rgb(90, 90, 95);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+.atendimento p::selection{
+    background: #000000;
+}
+.atendimento p{
+    top: 16px;
+    padding-left: 10px;
+    font-size: 12px;
+    position: relative;
+    margin: 0 auto;
+    max-height: 24px;
+    max-width: 200px;
+}
+.atendimento img{
+    cursor: pointer;
+    top: 16px;
+    margin: 0 auto;
+    max-height: 24px;
+    max-width: 24px;
+    position: relative;
+    padding: 4px;
+    border-radius: 37%;
+}
+.atendimento img::selection{
+    background: #000000;
+}
+.atendimento img:hover{
+    background: #383838;
+    transition: 2s;
+}
+.area-clientes{
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+}
+.img-clientes{
+    cursor: pointer;
+    top: 16px;
+    margin-right: 5px;
+    max-height: 24px;
+    max-width: 24px;
+    background-color: rgb(73, 73, 78);
+    position: relative;
+    padding: 4px;
+    border-radius: 37%;
+    right: 10px;
+}
+.img-clientes::selection{
+    background: #000000;
+}
+.img-clientes:hover{
+    background: #383838;
+    transition: 2s;
+}
+
+.btn-dark {
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background 0.2s linear;
+}
+nav.dark {
+    background: rgb(59, 59, 59);
+}
+body.dark{
+    background: rgb(59, 59, 59);
+}
+ul.dark {
+    color: rgb(255, 255, 255);
+}
+footer.dark{
+    background: rgb(59, 59, 59);
+}
+p.dark{
+    color: rgb(255, 255, 255) !important;
+}
+h1.dark{
+    color: rgb(107, 107, 107) !important;
+}
+h2.dark{
+    color: rgb(255, 255, 255);
+}
+a.dark{
+    color: rgb(165, 165, 165);
+}
+header.dark{
+    background: #242424;
+}
+section.dark{
+    background: rgb(59, 59, 59);
+}
+.contact .dark{
+    background: #242424 !important;
+}
+#dark{
+    background: #242424;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 5px;
+    position: relative;
+    height: 14px;
+    width: 30px;
+    transform: scale(1.5);
+}
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(16px);
+}
+.fa-moon::selection{
+    background: #000000;
+}
+.fa-moon {
+    color: #f1c40f;
+    background: none;
+    position: relative;
+    justify-self: center;
+    width: 10px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.fa-sun::selection{
+    background: #000000;
+}
+.fa-sun {
+    color: #f39c12;
+    background: none;
+    width: 10px;
+}
+.cfg-2{
+    min-width: 768px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 6em;
+}
+nav{
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+nav img{
+    cursor: pointer;
+    padding-top: 16px;
+    height: 64px;
+    width: 64px;
+}
+nav img::selection{
+    background: #000000;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.list-nav{
+    list-style: none;
+    margin: 0 auto;
+    padding: 32px 0 0 0;
+    font-size: medium;
+    font-weight: 700;
+    color: rgb(106, 106, 106);
+    max-height: 64px;
+}
+.list-nav li::selection{
+    background: #000000;
+    color: white;
+}
+.list-nav li{
+    padding-left: 16px;
+    display: inline;
+    position: relative;
+    padding-right: 16px;
+}
+.list-nav li:hover{
+    color: black;
+}
+.btn-imp::selection{
+    background: #000000;
+}
+.btn-imp{
+    cursor: pointer;
+    position: relative;
+    top: 16px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 37, 53);
+    font-weight: 700;
+    margin: 0 auto;
+    max-height: 48px;
+}
+.btn-imp:hover{
+    background: #000000;
+    transition: 2s;
+}
+.mobile-menu-icon {
+    display: none;
+    width: 15px;
+    height: 15px;
+}
+
+.mobile-menu {
+    display: none;
+}
+.principal-content{
+    width: 100%;
+    height: 420px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../img/slide.jpg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    color: rgb(73, 73, 78);
+    opacity: 0.9;
+    background-size: cover !important;
+}
+strong{
+    color: black;
+}
+.cfg-3{
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo-1::selection{
+    background: #000000;
+}
+.titulo-1{
+    height: 80px;
+    position: relative;
+    font-size: xx-large;
+    font-weight: 700;
+    max-width: 768px;
+}
+.texto-1::selection{
+    background: #000000;
+}
+.texto-1 strong::selection{
+    background: #000000;
+}
+.texto-1{
+    position: relative;
+    height: 100px;
+    max-width: 768px;
+}
+.btn-more::selection{
+    background: #ffffff;
+}
+.btn-more{
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: #313131;
+    font-weight: 700;
+    font-size: large;
+}
+.btn-more:hover{
+    background: #000000;
+    transition: 2s;
+}
+.cfg-4{
+    min-width: 768px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.cards{
+    transform: translateY(-75px);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+}
+.hold-card{
+    list-style: none;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
+}
+.card-all img::selection{
+    background: #000000;
+}
+.card-all h1::selection{
+    background: #ffffff;
+}
+.card-all p::selection{
+    background: #ffffff;
+}
+.hold-card li{
+    max-width: 240px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.img-cards{
+    background: #242424;
+    border-radius: 50%;
+    border: 2px solid ;
+    position: relative;
+    transform: translateY(-20px);
+}
+.card-all{
+    background: #242424;
+    color: white;
+    height: 240px;
+    border-radius: 13px;
+}
+.cards-info-all a::selection{
+    background: #111;
+    color: white;
+}
+.card-all h1{
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.services{
+    max-width: 768px;
+    margin: 0 auto;
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    justify-items: center;
+}
+.txt-1::selection{
+    background: #111;
+    color: white;
+}
+.txt-2::selection{
+    background: #111;
+    color: white;
+}
+.txt-1{
+    position: relative;
+    color: rgb(37, 37, 53);
+    margin: 0;
+    padding: 0;
+}
+.txt-2{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: rgb(102, 102, 105);
+    font-weight: 400;
+}
+.info-cards{ /* trocar quando for fazer o MQ*/
+    margin: 0 auto;
+    width: 768px;
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto;
+    padding-bottom: 100px;
+}
+.cards-services{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 200px;
+    padding: 20px;
+}
+.cards-info-all{
+    width: 250px;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+.cards-img{
+    height: 48px;
+    width: 48px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(226, 226, 226);
+}
+.cards-title::selection{
+    background: #111;
+    color: white;
+}
+.cards-txt::selection{
+    background: #111;
+    color: white;
+}
+.cards-img::selection{
+    background: #111;
+}
+.cards-info-all .cards-title{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: 5px;
+    margin: 0;
+}
+.cards-info-all .cards-txt{
+    color: rgb(73, 73, 78);
+    padding:5px;
+    margin: 0;
+}
+.cfg-6{
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.contact p::selection{
+    background: #ffffff;
+}
+.contact h1::selection{
+    background: #ffffff;
+}
+.contact{
+    width: 100%;
+    background: rgb(37, 37, 53);
+}
+.cfg-6 div{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact-zap{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.contact-zap img::selection{
+    background: #ffffff;
+}
+.contact-zap img{
+    justify-self: center;
+    height: 64px;
+    width: 64px;
+}
+.contact-zap a::selection{
+    background: #fff;
+}
+.contact-zap a{
+    justify-self: center;
+    font-size: x-large;
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+.aviso-contact::selection{
+    background: #fff;
+}
+.aviso-contact{
+    display: inline-block;
+    width: 512px;
+}
+footer{
+    width: 100%;
+    background: rgb(255, 246, 230);
+}
+.cfg-7{
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.fot-txt strong::selection{
+    background: #111;
+    color: white;
+}
+.fot-txt p::selection{
+    background: #111;
+    color: white;
+}
+.fot-img::selection{
+    background: #111;
+    color: white;
+}
+.fot-img img::selection{
+    background: #111;
+    color: white;
+}
+.fot-img{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+.fot-img img{
+    height: 128px;
+    width: 128px;
+}
+@media screen and (min-width: 421px) and (max-width: 750px) {
+    html{
+        min-width: 750px;
+    }
+    .content-nav, .list-nav, .btn-imp, .fale-conosco, .atendimento img, .img-clientes, .cfg-1 p {
+        display: none;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .fale-conosco img{
+        margin: 0 auto;
+    }
+    .cfg-1 {
+        min-width: 750px;
+        justify-content: space-between;
+    }
+    .cfg-1 p {
+        display: none;
+    }
+
+    nav {
+        max-width: 750px;
+        padding-bottom: 25px;
+        justify-content: space-around;
+    }
+
+    .btn-dark {
+        right: 20px;
+    }
+
+    .cfg-2 {
+        max-width: 750px;
+        justify-content: space-around;
+    }
+
+    .cfg-2 img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .content-nav ul {
+        display: none;
+    }
+
+    .btn-imp {
+        height: 40px;
+        width: 100px;
+        font-size: x-small;
+        position: relative;
+    }
+
+    .principal-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-width: 750px;
+    }
+
+    .cfg-3 {
+        max-width: 750px;
+        justify-content: center;
+    }
+
+    .cfg-3 h1 {
+        font-size: 1.5em;
+        padding-left: 20px;
+    }
+
+    .cfg-3 p {
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .btn-more {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .cfg-4 {
+        max-width: 750px;
+    }
+    .hold-card{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .services{
+        max-width: 750px;
+    }
+    .info-cards{
+        max-width: 750px;
+        grid-template-columns: auto;
+    }
+    .info-cards, .cards-services {
+        max-width: 750px;
+        grid-template-columns: auto auto;
+    }
+    .cfg-6 {
+        max-width: 750px;
+        justify-content: center;
+    }
+    .contact{
+        min-width: 750px;
+        width: 100%;
+    }
+    .contact-zap {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aviso-contact {
+        max-width: 750px;
+        text-align: center;
+    }
+    .cfg-6{
+        min-width: 750px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+    .cfg-7 {
+        max-width: 750px;
+        justify-content: space-around;
+        
+    }
+
+}
+@media screen and (max-width: 420px){
+    .content-nav, .list-nav, .btn-imp{
+        display: none;
+        padding: 0;
+    }
+    .list-nav{
+        justify-self: center;
+        margin: 0 auto;
+        max-width: 420px;
+    }
+    .list-nav li{
+        padding: 0;
+    }
+    .mobile-icon{
+        max-width: 36px;
+        max-height: 36px;
+        padding-top: 18px;
+    }
+    .mobile-menu-icon {
+        display: block;
+        position: relative;
+        transform: translateX(-30px);
+        max-width: 16px;
+        max-height: 16px;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        max-width: 16px;
+        max-height: 16px;
+    }
+    .mobile-menu ul {
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    body{
+        min-width: 420px; 
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    .fale-conosco{
+        display: none;
+    }
+    .atendimento {
+        display: flex;
+        min-width: 120px;
+        margin: 0 auto;
+        justify-content: center;
+        transform: translateX(13px);
+    }
+    .atendimento::before{
+        content: "Contato: +55(31)99583-7404";
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .atendimento img{
+        display: none;
+    }
+    .img-clientes{
+        display: none;
+    }
+    .header-1 {
+        width: 100%;
+
+    }
+    .cfg-1{
+        min-width: 380px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-self: center;
+        flex-direction: row;
+        height: 3em;
+    }
+    .cfg-1 p{
+        display: none;
+    }
+    nav{
+        padding-bottom: 25px;
+        margin: 0;
+    }
+    .btn-dark{
+    right: 20px;
+    }
+    .cfg-2{
+        min-width: 360px;
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 4em;
+        justify-self: center;
+    }
+    .cfg-2 img{
+        width: 64px;
+        height: 64px;
+    }
+    .content-nav ul{
+        display: none;
+    }
+    .btn-imp{
+        height: 40px;
+        width: 100px;
+        font-size: x-small;
+        position: relative;
+    }
+    .principal-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .cfg-3{
+        min-width: 360px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cfg-3 h1{
+        font-size: 1.5em;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 20px;
+    }
+    .cfg-3 p{
+        font: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+    }
+    .btn-more{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .cfg-4{
+        min-width: 360px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+    }
+    .hold-card{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .cards{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .card-all{
+        margin-top: 10px;
+    }
+    .card-all h1{
+        font-size: 1.4em;
+    }
+    .hold-card li{
+        font-size: 1em;
+
+    }
+    .img-cards{
+        width: 48px;
+        height: 48px;
+    }
+    .txt-1{
+        font-size: 2em;
+    }
+    .txt-2{
+        font-size: 1.4em;
+    }
+    .info-cards{
+        max-width: 420px;
+        grid-template-columns: auto;
+    }
+    .cards-services{
+        max-width: 420px;
+    }
+    .cfg-6{
+        min-width: 360px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .cfg-6 div{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contact-zap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .contact-zap img{
+        margin: 0 auto;
+        justify-self: center;
+        height: 56px;
+        width: 56px;
+    }
+    .contact-zap a{
+        justify-self: center;
+        font-size: medium;
+        color: green;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 700;
+        margin: 0 auto;
+    }
+    .aviso-contact{
+        max-width: 225px;
+    }
+    .aviso-contact h1{
+        font-size: 1.4em;
+        max-width: 200px;
+    }
+    .aviso-contact p{
+        font-size: 0.9em;
+        max-width: 200px;
+    }
+    .cfg-7{
+        min-width: 360px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+    }
+    .fot-img img{
+        margin: 0 auto;
+        justify-self: center;
+        width: 64px;
+        height: 64px;
+    }
+}
